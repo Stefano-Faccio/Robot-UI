@@ -1,0 +1,15 @@
+<!-- Important data -->
+<script>
+    const CELLS = [{{#each cells}}{{this}},{{/each}}];
+    const BACKPACK = [{{#each backpack}} '{{this}}', {{/each}}];
+    const BACKPACK_SIZE = {{backpack_size}};
+    const GRID_SIZE = {{grid_size}};
+</script>
+<!-- Varius JS Libraries: Bootstrap, Popper, Loading-bar -->
+<script type="text/javascript" src="/public/js/loading-bar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="/public/ts/myts.js"></script>

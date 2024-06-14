@@ -1,0 +1,128 @@
+<style>
+    .theme-icon-active{
+        fill: #fff;
+    }
+
+    .center {
+        margin: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat({{grid_size}}, 1fr);
+        gap: 0;
+        border: 1px solid #000;
+    }
+
+    .cell {
+        aspect-ratio: 1/ 1;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        background-color: black;
+    }
+
+    .cell svg, .item svg {
+        stroke: black;
+        stroke-width: 14;
+    }
+
+    svg.robot{
+        stroke-width: 30;
+        fill:gray;
+        stroke: black;
+    }
+
+    .item svg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cell svg {
+        width: 85%;
+        height: 85%;
+    }
+
+    .my_tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    .my_tooltip .my_tooltiptext {
+        visibility: hidden;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px;
+        position: absolute;
+        z-index: 1;
+        background-color: #6c757d;
+        color: #fff;
+        top: 0;
+        left: 225%;
+    }
+
+    .my_tooltip .my_tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* To the left of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+    //border-color: transparent black transparent transparent;
+        border-color: transparent #6c757d transparent transparent;
+    }
+
+    .my_tooltip:hover .my_tooltiptext {
+        visibility: visible;
+    }
+
+    .backpack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        border: 1px solid #6c757d;
+    }
+
+    .item {
+        aspect-ratio: 1/ 1;
+        display: flex;
+        padding: 5px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    p.item {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ldBar {
+    }
+
+    .ldBar-label {
+        font-size: 2em;
+        font-weight: 1000;
+    }
+
+    .ldBar.label-center > .ldBar-label {
+        text-shadow: none;
+    }
+
+    .ldBar path.mainline {
+        stroke-width: 9;
+        stroke: #198754;
+        stroke-linecap: butt;
+    }
+
+    .ldBar path.baseline {
+        stroke-width: 9;
+        stroke: #6c757d;
+        stroke-linecap: butt;
+    }
+
+    .ldBar-label:after, .ldBar-label:before {
+        content: "";
+    }
+</style>
